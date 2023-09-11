@@ -124,7 +124,7 @@ ___
 - Open `Internship-python-3` and click on Branch `Internship-py-3-1`  
 - Open `README.md` then click `Uncommitted changes` to view changes to this file  
 - Click `Commit` to see staging area  
-- Check the box and add commit message `updated README.md`  
-- Click `Push`, select Branch `Internship-py-3-1`, then click `OK`  
+- Add commit message `updated README.md`  
+- Check the box `Push changes immediately to clock/Internship-py-3-1`, then click `commit`  
   
 ---  
