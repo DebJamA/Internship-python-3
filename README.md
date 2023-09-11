@@ -128,6 +128,5 @@ ___
 - Add commit message `updated README.md`, then click `commit`  
  - Select the commit, then click `Push`  
  - Check the box for Branch `Internship-py-3-1` then click `OK`  
- - Enter GitHub password  
   
 ---  
