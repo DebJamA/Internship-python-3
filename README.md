@@ -111,3 +111,20 @@ ___
 `% git push clock Internship-py-3-1`  
   
 ---  
+  
+## Use Sourcetree  
+  
+**1.** Update `README.md`  
+  
+**2.** Download [Sourcetree](https://www.sourcetreeapp.com/)  
+  
+**3.** Upload `README.md` changes to Github using SourceTree  
+- Sourcetree > New > Add Existing Local Repository:  
+- Select: `Internship-python-3`  
+- Open `Internship-python-3` and click on Branch `Internship-py-3-1`  
+- Open `README.md` then click `Uncommitted changes` to view changes to this file  
+- Click `Commit` to see staging area  
+- Check the box and add commit message `updated README.md`  
+- Click `Push`, select Branch `Internship-py-3-1`, then click `OK`  
+  
+---  
