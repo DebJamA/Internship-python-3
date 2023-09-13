@@ -1,4 +1,4 @@
-# Create the clock simulator class  
+# Create the Clock Simulator Class (py-3-2)  
   
 ---  
   
@@ -35,9 +35,6 @@ ___
   
 ___  
   
-## Push to GitHub with Sourcetree:  
- 
-commit message: "initialized Clock class"
+## Push to GitHub with Sourcetree  
   
 ---  
-  
