@@ -1,6 +1,7 @@
 import numpy as np
 
-class Clock(object):
+
+class Clock:
 
     def __init__(self, numballs=None):  # constructor method to create instance of class Clock
         self.line_1 = []  # minute track, 1 ball represents 1 minute, up to 4 minutes
@@ -45,3 +46,11 @@ class Clock(object):
         return str(days) + " days " + ("and 12 hours" if is_half_day else "")
         # if is_half_day is True return "number days and 12 hours"
         # if is_half_day is False only return "number days"
+
+    def simulate(self):
+        inprogress = True
+        while inprogress:
+            if self.tick():
+                if self.check_balls_sequence():
+                    inprogress = False
+        return self.fullCycles
