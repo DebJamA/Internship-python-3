@@ -2,7 +2,7 @@ import numpy as np
 
 class Clock(object):
 
-    def __init__(self, numballs=None):
+    def __init__(self, numballs=None):  # constructor method to create instance of class Clock
         self.line_1 = []  # minute track, 1 ball represents 1 minute, up to 4 minutes
         self.line_5 = []  # increment track, 1 ball represents 5 minutes, up to 55 minutes
         self.line_60 = []  # hour track, 1 ball represents 60 minutes or 1 hour, up to 12 hours
@@ -30,3 +30,18 @@ class Clock(object):
                     self.fullCycles += 1  # 1 is added to number or count of full cycles
                     return True  # full cycle completed at 12:00, add 1 to fullCycles variable
         return False  # full cycle not complete, do not add to fullCycles variable
+
+    def check_balls_sequence(self):  # checking the sequence of balls in the clock
+        for i in range(len(self.balls)):
+            if self.balls[i] != i:
+                return False
+        return True
+
+    def cycles_to_time(cycles):  # elapsed time since clock was initialized and set into motion
+        days = int(cycles / 2)  # a day is 24 hours but cycle is only 12 hours so divide number of cycles by 2
+        # is_half_day is False
+        # is_half_day is True if cycles % 2 != 0
+        is_half_day = cycles % 2 != 0
+        return str(days) + " days " + ("and 12 hours" if is_half_day else "")
+        # if is_half_day is True return "number days and 12 hours"
+        # if is_half_day is False only return "number days"
